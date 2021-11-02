@@ -27,6 +27,7 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 
 // index sections
 
+import LandingPage from "views/examples/LandingPage.js";
 import SectionButtons from "views/index-sections/SectionButtons.js";
 import SectionNavbars from "views/index-sections/SectionNavbars.js";
 import SectionNavigation from "views/index-sections/SectionNavigation.js";
@@ -50,10 +51,13 @@ function Index() {
     };
   });
   return (
+    
     <>
-      <IndexNavbar />
-      <IndexHeader />
-      <div className="main">
+    
+      <IndexNavbar />       
+      <IndexHeader />      
+      <LandingPage />                    
+      <div className="main">      
         <SectionButtons />
         <SectionNavbars />
         <SectionNavigation />
@@ -63,12 +67,12 @@ function Index() {
         <SectionJavaScript />
         <SectionCarousel />
         <SectionNucleoIcons />
-        <SectionDark />
+        <SectionDark />      
         <SectionLogin />
         <SectionExamples />
         <SectionDownload />
-        <DemoFooter />
-      </div>
+        <DemoFooter />        
+      </div>       
     </>
   );
 }
