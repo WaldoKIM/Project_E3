@@ -31,6 +31,8 @@ import {
   Container,
 } from "reactstrap";
 
+import Modaltest from "../Add/modaltest.js";
+
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -62,7 +64,7 @@ function IndexNavbar() {
     };
   });
   return (
-    <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
+    <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">      
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
@@ -149,6 +151,17 @@ function IndexNavbar() {
 */}
                 <p className="">고객 지원</p>
                 
+              </NavLink>
+            </NavItem>
+            
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="#"
+                target="_blank"
+                title="Star on GitHub"
+              >
+            <Modaltest />      
               </NavLink>
             </NavItem>
 

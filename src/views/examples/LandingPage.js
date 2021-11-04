@@ -36,8 +36,8 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+//import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+//import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
 function LandingPage() {
@@ -50,8 +50,10 @@ function LandingPage() {
   });
   return (
     <>
+      {/*
       <ExamplesNavbar />
       <LandingPageHeader />
+      */}
       <div className="main">
         <div className="section text-center">
           <Container>
@@ -148,18 +150,19 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        <div className="section section-white text-center">
           <Container>
             <h2 className="title">대표 서비스 소개</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+                  <div className="">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
+                        className="img-rounded img-responsive"
                         src={
-                          require("assets/img/faces/clem-onojeghuo-3.jpg")
+                          require("assets/img/e3/2team_main.png")
                             .default
                         }
                       />
@@ -168,14 +171,15 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
+                        <CardTitle tag="h4">국토환경성 평가지도</CardTitle>
+                        <h6 className="card-category">
+                          사업수행년도 2020&nbsp;&ndash;&nbsp;2021</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
+                      국토환경성평가지도는 행정계획 및 환경영향평가 등에서 국토의 환경적
+                      가치를 종합적으로 평가하고 환경공간정보를 효율적으로 활용하기 위한
+                      목적으로 만들어진 시스템입니다.
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -208,12 +212,12 @@ function LandingPage() {
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+                  <div className="">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         src={
-                          require("assets/img/faces/joe-gardner-2.jpg").default
+                          require("assets/img/e3/1team_main.png").default
                         }
                       />
                     </a>
@@ -221,15 +225,15 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
+                        <CardTitle tag="h4">제주특별자치도 공간포털</CardTitle>
+                        <h6 className="card-category dbtext1">
+                          사업수행년도 2020&nbsp;&ndash;&nbsp;2021</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
+                      제주특별자치도 전역을 대상으로 환경자원 기초<br />조사 및 DB 구축,
+                      환경자원총량모형 구축 및 환경<br />자원총량의 산정, 평가지표 개발,
+                      환경총량관리<br />시스템 구측 및 환경자원총량관리방안 수립 
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -262,12 +266,12 @@ function LandingPage() {
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <div className="card-avatar">
+                  <div className="">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         src={
-                          require("assets/img/faces/erik-lucatero-2.jpg")
+                          require("assets/img/e3/3team_main.png")
                             .default
                         }
                       />
@@ -276,15 +280,14 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category">Developer</h6>
+                        <CardTitle tag="h4">환경영향평가 정보지원시스템</CardTitle>
+                        <h6 className="card-category">
+                        사업수행년도 2020&nbsp;&ndash;&nbsp;2021</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                      환경영향평가 사업의 계획 또는 개발사업 등의 추진과정에서
+                      발생할 수 있는 환경영향평가 사업 관리 및 정보를 제공하고 있습니다.                      
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">

@@ -89,3 +89,25 @@
     display: table;
     content: " ";
 }
+
+
+.modalx{
+    position: fixed;
+    z-index:12000;
+    
+}
+
+.modalxx{
+    position: fixed;
+    z-index:1234;
+    top : 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background:success;
+    color: rgb(32, 80, 0);
+    outline: none;
+    padding: 1em;
+    text-align: center;
+    
+}
